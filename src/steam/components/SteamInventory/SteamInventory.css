@@ -1,0 +1,88 @@
+.steaminventory {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.steaminventory__body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: auto;
+  padding: 10px;
+  width: 80%;
+  height: 80%;
+  background-color: var(--color-background);
+  border-radius: 6px;
+  box-shadow: 0 20px 80px -10px rgba(153, 113, 228, 0.1);
+}
+
+.profile-inventory, .add-to {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.profile-inventory h2, .add-to h2 {
+  padding: 10px;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+.profile-inventory {
+  width: 60%;
+}
+.profile-inventory .actions {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  gap: 10px;
+}
+.profile-inventory-items {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.add-to {
+  width: 40%;
+}
+.selected-item {
+  display: flex;
+  gap: 10px;
+}
+.selected-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+.selected-item img:before {
+  content: "dfg";
+  display: none;
+  margin-bottom: 200px;
+}
+.selected-item img:after {
+  content: "(url: " attr(src) ")";
+  display: block;
+  font-size: 12px;
+}
+
+.selected-item p {
+  flex: 1;
+  text-align: center;
+}
+.add-to-actions {
+  display: flex;
+  gap: 10px;
+}
+.add-to-actions button {
+  flex: 1;
+}

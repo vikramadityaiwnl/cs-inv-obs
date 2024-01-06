@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px;
+
+  height: 10vh;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 25px 20px -20px;
+}
+
+.navbar__profile {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__profile .currency {
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  padding: 10px;
+  font-size: 14px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.navbar__profile img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile__data {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  justify-content: center;
+}

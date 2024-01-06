@@ -1,0 +1,10 @@
+.profit {
+  color: #00b894;
+}
+.loss {
+  color: #d63031;
+}
+
+.pointer {
+  cursor: pointer;
+}

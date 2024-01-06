@@ -1,0 +1,42 @@
+.home {
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+}
+
+.home__content {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  gap: 10px;
+  align-items: stretch;
+  padding: 20px;
+
+  height: 90vh;
+}
+
+.list__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 250px;
+
+  padding-right: 20px;
+  border-right: 1px solid var(--border);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+
+  overflow: auto;
+  scrollbar-width: none;
+}

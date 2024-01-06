@@ -1,0 +1,30 @@
+.inventory {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  overflow: hidden;
+}
+
+.inventory__heading {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 3rem;
+}
+
+.inventory__actions {
+  display: flex;
+  gap: 5px;
+  margin-left: auto;
+  align-self: center;
+}
+
+.inventory__items {
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+
+  overflow-y: auto;
+}
